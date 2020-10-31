@@ -8,7 +8,7 @@ public interface GrudService<T, ID> {
 
     public T findById(ID id);
 
-    public T Save(T object);
+    public T save(T object);
 
     public void delete(T object);
 
