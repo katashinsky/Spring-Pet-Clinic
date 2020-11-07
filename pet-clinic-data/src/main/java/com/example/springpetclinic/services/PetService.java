@@ -7,5 +7,4 @@ import java.util.Set;
 
 public interface PetService extends GrudService<Pet, Long>{
 
-    Pet findByName(String name);
 }
