@@ -2,11 +2,13 @@ package com.example.springpetclinic.services.map;
 
 import com.example.springpetclinic.model.Pet;
 import com.example.springpetclinic.services.PetService;
+import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;
 
 import java.util.Set;
 
 @Service
+@Profile({"default", "map"})
 public class PetServiceMap extends AbstractMapService<Pet, Long> implements PetService {
     @Override
     public Set<Pet> findAll() {
@@ -31,10 +33,5 @@ public class PetServiceMap extends AbstractMapService<Pet, Long> implements PetS
     @Override
     public void deleteById(Long id) {
         super.deleteById(id);
-    }
-
-    @Override
-    public Pet findByName(String name) {
-        return null;
     }
 }
