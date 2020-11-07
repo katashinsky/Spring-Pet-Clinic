@@ -2,7 +2,7 @@ package com.example.springpetclinic.services;
 
 import java.util.Set;
 
-public interface GrudService<T, ID> {
+public interface CrudService<T, ID> {
 
     public Set<T> findAll();
 

@@ -1,7 +1,6 @@
 package com.example.springpetclinic.services.map;
 
 import com.example.springpetclinic.model.Pet;
-import com.example.springpetclinic.services.GrudService;
 import com.example.springpetclinic.services.PetService;
 import org.springframework.stereotype.Service;
 
